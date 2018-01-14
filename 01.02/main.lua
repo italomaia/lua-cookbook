@@ -5,14 +5,10 @@ or Unicode code, and vice versa.
 
 require 'busted.runner'()
 
-describe("'a'", function ()
-  it('ordinal is 97', function ()
-    assert.are.equal(string.byte('a'), 97)
-  end)
+it("'a' ordinal is 97", function ()
+  assert.are.equal(string.byte('a'), 97)
 end)
 
-describe("97", function ()
-  it("character is 'a'", function ()
-    assert.are.equal(string.char(97), 'a')
-  end)
+it("97 character is 'a'", function ()
+  assert.are.equal(string.char(97), 'a')
 end)
